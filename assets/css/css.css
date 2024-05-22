@@ -1,2 +1,15 @@
 /* ? estilos da parte: navbar */
 
+div.navbar  {
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+ul.menu  {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li.menu_item  {
+    margin: 0px 10px;
+}
