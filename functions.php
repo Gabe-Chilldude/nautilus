@@ -14,18 +14,26 @@ add_action('after_setup_theme', function () {
     ));
 });
 
+add_action('wp_enqueue_style', 'enqueue_multiple_styles');
 
 define('STYLES_PATH', get_template_directory_uri() . '/assets/css');
 
 $stylesheets = [
     ['style', get_stylesheet_uri()],
-    ['css', STYLES_PATH],
-    ['resposive', STYLES_PATH]
+    ['css', STYLES_PATH . '/css.css'],
+    ['resposive', STYLES_PATH . '/responsive.css']
 ]; 
 
-foreach ($stylesheets as $sheet)  {
 
-    wp_enqueue_style($sheet[0], $sheet[1] . '/' . $sheet[0] . '.css');
+function enqueue_multiple_styles(array $sheets)  {
 
+    foreach ($sheets as $sheet)  {
+    
+        wp_enqueue_style($sheet[0], $sheet[1]);
+
+    }
 }
+
+enqueue_multiple_styles($stylesheets);
+
 

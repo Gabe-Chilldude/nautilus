@@ -1,7 +1,7 @@
-<?php get_header();?>
+<?php 
 
-<h1>Olá Mundo</h1>
+get_header();
 
-</body>
-</html>
-<?php get_footer();?>
+get_template_part('parts/navbar');
+
+get_footer();
