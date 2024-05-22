@@ -14,6 +14,8 @@ add_action('after_setup_theme', function () {
     ));
 });
 
+// ? adicionar estilos ao tema 
+
 add_action('wp_enqueue_style', 'enqueue_multiple_styles');
 
 define('STYLES_PATH', get_template_directory_uri() . '/assets/css');
@@ -24,12 +26,11 @@ $stylesheets = [
     ['resposive', STYLES_PATH . '/responsive.css']
 ]; 
 
-
-function enqueue_multiple_styles(array $sheets)  {
+function enqueue_multiple_styles(array $sheets, $version = false)  {
 
     foreach ($sheets as $sheet)  {
     
-        wp_enqueue_style($sheet[0], $sheet[1]);
+        wp_enqueue_style($sheet[0], $sheet[1], false, $version);
 
     }
 }
@@ -37,3 +38,14 @@ function enqueue_multiple_styles(array $sheets)  {
 enqueue_multiple_styles($stylesheets);
 
 
+// ? Montar div de conteúdo
+
+add_action('get_content_cotainer', 'get_content_container', 10, 1 );
+
+function get_content_cotainer($contents)  {
+    echo '<div class="content">';
+
+    echo $contents;
+
+    echo'</div>';
+}
