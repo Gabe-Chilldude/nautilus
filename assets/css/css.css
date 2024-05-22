@@ -1,15 +1,48 @@
 /* ? estilos da parte: navbar */
 
 div.navbar  {
+    width: 100vw;
+    margin: 0px;
+    padding: 5px 0px;
+
+    position: fixed;
+
     display: flex;  
     justify-content: space-evenly;
+    align-items: center;
+
+    transition: all ease-in-out .5s;
+}
+
+div.navbar>* {
+    transition: all ease-in-out .5s;
+}
+
+div.navbar_red  {
+    background-color: e33f3f;
+    -webkit-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
+    box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
+}
+
+div.navbar_red>img.logo  {
+    height: 40px;
 }
 
 ul.menu  {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 li.menu_item  {
     margin: 0px 10px;
+    font-family: "Prompt";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
+
+img.logo  {
+    height: 68px;
+}
+

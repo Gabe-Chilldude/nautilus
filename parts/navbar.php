@@ -1,6 +1,6 @@
 <div class="navbar">
 
-    <img src="<?= 'url(' . get_template_directory_uri() . ')'?>/assets/images/logo.png" alt="nn" class="logo">
+    <img src="<?= get_template_directory_uri(); ?>/assets/images/logo.png" alt="nn" class="logo">
 
     <ul class="menu">
 

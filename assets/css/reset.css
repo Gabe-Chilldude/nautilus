@@ -2,6 +2,16 @@
     Reseta Estilos dos Arquivos
 */
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.content  {
+    margin: 0px;
+    padding:0px ;
+}
+
 div.content>*  {
     margin: 0px;
     padding: 0px;
