@@ -13,3 +13,19 @@ add_action('after_setup_theme', function () {
         'menu_mobile' => 'Menu Mobile'
     ));
 });
+
+
+define('STYLES_PATH', get_template_directory_uri() . '/assets/css');
+
+$stylesheets = [
+    ['style', get_stylesheet_uri()],
+    ['css', STYLES_PATH],
+    ['resposive', STYLES_PATH]
+]; 
+
+foreach ($stylesheets as $sheet)  {
+
+    wp_enqueue_style($sheet[0], $sheet[1] . '/' . $sheet[0] . '.css');
+
+}
+
