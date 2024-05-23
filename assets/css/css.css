@@ -11,15 +11,15 @@ div.navbar  {
     justify-content: space-evenly;
     align-items: center;
 
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out .3s;
 }
 
 div.navbar>* {
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out .3s;
 }
 
-div.navbar_red  {
-    background-color: e33f3f;
+div .navbar_red  {
+    background-color: #e33f3f;
     -webkit-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
     -moz-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
     box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
@@ -45,4 +45,3 @@ li.menu_item  {
 img.logo  {
     height: 68px;
 }
-
