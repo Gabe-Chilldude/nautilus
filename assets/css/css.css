@@ -68,7 +68,7 @@ div.banner_with_foreground  {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 img.banner_foreground  {
@@ -76,22 +76,21 @@ img.banner_foreground  {
 }
 
 div.ctaAndText  {
-    width: 800px;
-    margin-right: 100px;
+    width: 598px;
+    margin-right: 400px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
 }
 
 p.banner_text  {
     font-family: "Mukta";
     margin: 0px;
-    width: 590px;
     line-height: 25px;
-    word-spacing: 5px;
+    word-spacing: 2px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -101,6 +100,8 @@ p.banner_text  {
     font-size: 45px;
     line-height: 50px;
     margin: 0px 0px 20px 0px;
+
+    width: 500px;
 }
 
 button.banner_cta  {
@@ -119,6 +120,8 @@ button.banner_cta  {
     border-style: solid;
     background-color: rgba(255, 255, 255, 0);
 
+    cursor: pointer;
+
     transition: all ease-in-out .3s;
 }
 
@@ -126,4 +129,20 @@ button.banner_cta:hover  {
     background-color: white;
     border-color: white;
     color: black;
+}
+
+div.sponsors  {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+p.banner_sponsors  {
+    font-family: "Prompt";
+    font-weight: 400;
+    word-spacing: 3px;
+}
+
+img.sponsor_img  {
+    height: 30px;
 }

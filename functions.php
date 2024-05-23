@@ -36,7 +36,7 @@ function enqueue_multiple_styles(array $sheets, $version = false)  {
     }
 }
 
-do_action('wp_enqueue_style', $stylesheets, false);
+do_action('wp_enqueue_style', $stylesheets, '0.1.1');
 
 wp_enqueue_script('script', get_template_directory_uri() . '/assets/scripts/script.js', false, false);
 
