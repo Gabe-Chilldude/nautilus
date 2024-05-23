@@ -5,7 +5,7 @@
     <ul class="menu">
 
         <li class="menu_item"><a href="" class="menu_link">Home</a></li>
-        <li class="menu_item"><a href="" class="menu_link">Por Que a Brand Persona</a></li>
+        <li class="menu_item"><a href="" class="menu_link">Por Que Brand Persona</a></li>
         <li class="menu_item"><a href="" class="menu_link">O Mercado</a></li>
         <li class="menu_item"><a href="" class="menu_link">Vantagens</a></li>
         <li class="menu_item"><a href="" class="menu_link">Como Funciona</a></li>

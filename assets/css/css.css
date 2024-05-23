@@ -3,7 +3,7 @@
 div.navbar  {
     width: 100vw;
     margin: 0px;
-    padding: 10px 0px;
+    padding: 20px 0px;
 
     position: fixed;
 
@@ -19,6 +19,7 @@ div.navbar>* {
 }
 
 div .navbar_red  {
+    padding: 10px 0px;
     background-color: #e33f3f;
     -webkit-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
     -moz-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
@@ -26,16 +27,15 @@ div .navbar_red  {
 }
 
 div.navbar_red>img.logo  {
-    height: 40px;
+    height: 45px;
 }
 
 ul.menu  {
     display: flex;
-    justify-content: space-between;
 }
 
 li.menu_item  {
-    margin: 0px 10px;
+    margin: 0px 20px;
     font-family: "Prompt";
     font-size: 14px;
     font-weight: 400;
@@ -51,3 +51,79 @@ img.logo  {
 }
 
 /* ? código da parte: parts/bannerWithForeground */
+
+.text  {
+    font-family: "Prompt";
+    color: white;
+}
+
+
+div.banner_with_foreground  {
+    height: 695px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:center ;
+    background-size:cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.banner_foreground  {
+    height: 695px;
+}
+
+div.ctaAndText  {
+    width: 800px;
+    margin-right: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p.banner_text  {
+    font-family: "Mukta";
+    margin: 0px;
+    width: 590px;
+    line-height: 25px;
+    word-spacing: 5px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.banner_title  {
+    font-weight: 700;
+    text-shadow: -2px 1px 18px rgba(0,0,0,0.39);
+    font-size: 45px;
+    line-height: 50px;
+    margin: 0px 0px 20px 0px;
+}
+
+button.banner_cta  {
+    font-family: "Prompt";
+    color: white;
+    font-weight: 400;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: .3px;
+
+    border-color: #ff9898;
+    border-radius: 10px;
+    border-width: thin;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0);
+
+    transition: all ease-in-out .3s;
+}
+
+button.banner_cta:hover  {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
