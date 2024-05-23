@@ -73,10 +73,11 @@ div.banner_with_foreground  {
 
 img.banner_foreground  {
     height: 695px;
+    margin-left: -100px;
 }
 
 div.ctaAndText  {
-    width: 598px;
+    width: 640px;
     margin-right: 400px;
 
     display: flex;
@@ -85,9 +86,10 @@ div.ctaAndText  {
 }
 
 p.banner_text  {
+    width: inherit;
     font-family: "Mukta";
     margin: 0px;
-    line-height: 25px;
+    line-height: 23px;
     word-spacing: 2px;
     font-size: 16px;
     font-weight: 400;
@@ -114,6 +116,8 @@ button.banner_cta  {
     word-spacing: 5px;
     letter-spacing: .3px;
 
+    margin-top: 20px;
+
     border-color: #ff9898;
     border-radius: 10px;
     border-width: thin;
@@ -133,8 +137,9 @@ button.banner_cta:hover  {
 
 div.sponsors  {
     display: flex;
+    align-items: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 p.banner_sponsors  {
@@ -145,4 +150,5 @@ p.banner_sponsors  {
 
 img.sponsor_img  {
     height: 30px;
+    margin-left: 20px;
 }
