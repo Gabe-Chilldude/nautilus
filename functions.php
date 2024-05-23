@@ -22,9 +22,9 @@ define('STYLES_PATH', get_template_directory_uri() . '/assets/css');
 
 $stylesheets = [
     ['style', get_stylesheet_uri()],
+    ['reset', STYLES_PATH . '/reset.css'],
     ['css', STYLES_PATH . '/css.css'],
-    ['resposive', STYLES_PATH . '/responsive.css'],
-    ['reset', STYLES_PATH . '/reset.css']
+    ['resposive', STYLES_PATH . '/responsive.css']
 ]; 
 
 function enqueue_multiple_styles(array $sheets, $version = false)  {
@@ -36,7 +36,7 @@ function enqueue_multiple_styles(array $sheets, $version = false)  {
     }
 }
 
-enqueue_multiple_styles($stylesheets);
+do_action('wp_enqueue_style', $stylesheets, '0.1.2');
 
 wp_enqueue_script('script', get_template_directory_uri() . '/assets/scripts/script.js', false, false);
 

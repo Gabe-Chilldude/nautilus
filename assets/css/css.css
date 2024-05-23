@@ -3,7 +3,7 @@
 div.navbar  {
     width: 100vw;
     margin: 0px;
-    padding: 5px 0px;
+    padding: 10px 0px;
 
     position: fixed;
 
@@ -42,6 +42,12 @@ li.menu_item  {
     text-transform: uppercase;
 }
 
+a.menu_link  {
+    color: white;
+}
+
 img.logo  {
     height: 68px;
 }
+
+/* ? código da parte: parts/bannerWithForeground */
