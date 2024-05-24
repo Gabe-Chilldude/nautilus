@@ -4,15 +4,13 @@ window.onscroll = function() {morphNavbar()};
 
 function morphNavbar()  {
         if (document.documentElement.scrollTop > 50)  {
-            for(i=0;i<navbar.length;i++)  {
-                navbar[i].className = "navbar navbar_red"
+            for(let i of navbar) {
+                i.clasName = "navbar navbar_red"
             }
         } else  {
-            for(i=0;i<navbar.length;i++)  {
-                navbar[i].className = "navbar"
+            for(let i of navbar) {
+                i.clasName = "navbar"
             }
         }
     
 }
-
-// TODO tranformar fors em for of's

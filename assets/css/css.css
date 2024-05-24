@@ -1,9 +1,59 @@
-/* ? estilos da parte: navbar */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+    ? estilos gerais 
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.text  {
+    font-family: "Prompt";
+    color: white;
+}
+
+.body_text {
+    font-family: "Catamaran";
+    font-weight: 300;
+}
+
+/* TODO instalar fonte Catamaran */
+
+.sub_title  {
+    font-family: "Mukta";
+    line-height: 23px;
+    word-spacing: 2px;
+    font-weight: 400;
+}
+
+.title {
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.button  {
+    font-family: "Prompt";
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    font-weight: 400;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: .3px;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+    ? estilos da parte: navbar 
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 div.navbar  {
     width: 100vw;
     margin: 0px;
     padding: 20px 0px;
+    z-index: 2;
 
     position: fixed;
 
@@ -50,12 +100,12 @@ img.logo  {
     height: 68px;
 }
 
-/* ? código da parte: parts/bannerWithForeground */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++
 
-.text  {
-    font-family: "Prompt";
-    color: white;
-}
+    ? código da parte: parts/bannerWithForeground 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 
 
 div.banner_with_foreground  {
@@ -74,11 +124,13 @@ div.banner_with_foreground  {
 img.banner_foreground  {
     height: 695px;
     margin-left: -100px;
+
 }
 
 div.ctaAndText  {
     width: 640px;
     margin-right: 400px;
+    z-index: 1;
 
     display: flex;
     flex-direction: column;
@@ -87,47 +139,27 @@ div.ctaAndText  {
 
 p.banner_text  {
     width: inherit;
-    font-family: "Mukta";
     margin: 0px;
-    line-height: 23px;
-    word-spacing: 2px;
     font-size: 16px;
-    font-weight: 400;
 }
 
 
 .banner_title  {
-    font-weight: 700;
     text-shadow: -2px 1px 18px rgba(0,0,0,0.39);
     font-size: 45px;
-    line-height: 50px;
     margin: 0px 0px 20px 0px;
-
     width: 500px;
 }
 
+
 button.banner_cta  {
-    font-family: "Prompt";
-    color: white;
-    font-weight: 400;
-    width: 200px;
-    height: 50px;
-    text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: .3px;
-
-    margin-top: 20px;
-
-    border-color: #ff9898;
-    border-radius: 10px;
+    border-color: #ffffff36;
     border-width: thin;
     border-style: solid;
+    margin-top: 20px;
     background-color: rgba(255, 255, 255, 0);
-
-    cursor: pointer;
-
-    transition: all ease-in-out .3s;
 }
+
 
 button.banner_cta:hover  {
     background-color: white;
@@ -143,7 +175,6 @@ div.sponsors  {
 }
 
 p.banner_sponsors  {
-    font-family: "Prompt";
     font-weight: 400;
     word-spacing: 3px;
 }
@@ -151,4 +182,22 @@ p.banner_sponsors  {
 img.sponsor_img  {
     height: 30px;
     margin-left: 20px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++
+
+    ? ESTILO DA PARTE parts/bannerWithForeground
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+div.footer_form  {
+    background-color: #e33f3f;
+}
+
+button.footer_button  {
+    background-color: #2ecc71;
+}
+
+button.footer_button:hover  {
+    background-color: #2fa25f;
 }
