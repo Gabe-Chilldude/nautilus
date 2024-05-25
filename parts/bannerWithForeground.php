@@ -2,7 +2,7 @@
 
    <img src="<?=get_template_directory_uri()?>/assets/images/banner_foreground.png" alt="" class="banner_foreground"> 
 
-   <div class="ctaAndText">
+   <div class="cta_and_text">
 
         <p class="banner_text sub_title text">
             leve sua empresa para a nova realidade digital

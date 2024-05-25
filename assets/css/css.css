@@ -4,6 +4,10 @@
 
  ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+.hidden  {
+    display: none;
+}
+
 .text  {
     font-family: "Prompt";
     color: white;
@@ -70,34 +74,41 @@
 
  ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+
+div.navbar_container  {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    transition: all ease-in-out .3s;
+    margin: 0px;
+    padding: 0px;
+}
+
 div.navbar  {
     width: 100vw;
     margin: 0px;
     padding: 20px 0px;
-    z-index: 2;
-
-    position: fixed;
 
     display: flex;  
     justify-content: space-evenly;
     align-items: center;
-
     transition: all ease-in-out .3s;
+
 }
 
 div.navbar>* {
     transition: all ease-in-out .3s;
 }
 
-div .navbar_red  {
-    padding: 10px 0px;
+div.navbar_red  {
     background-color: #e33f3f;
     -webkit-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
     -moz-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
     box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
 }
 
-div.navbar_red>img.logo  {
+div.navbar_red>div.navbar>img.logo  {
     height: 45px;
 }
 
@@ -119,6 +130,16 @@ a.menu_link  {
 
 img.logo  {
     height: 68px;
+}
+
+button.hamburger_icon  {
+    display: none;
+    background: none;
+    border: none;
+}
+
+svg.hamburger_icon  {
+    height: 20px;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++
@@ -147,7 +168,7 @@ img.banner_foreground  {
     margin-left: -100px;
 }
 
-div.ctaAndText  {
+div.cta_and_text  {
     width: 640px;
     margin-right: 400px;
     z-index: 1;

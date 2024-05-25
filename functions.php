@@ -34,9 +34,9 @@ function enqueue_multiple_styles(array $sheets, $version = false)  {
     }
 }
 
-enqueue_multiple_styles($stylesheets, false);
+enqueue_multiple_styles($stylesheets, null);
 
-wp_enqueue_script('script', get_template_directory_uri() . '/assets/scripts/script.js', false, false);
+wp_enqueue_script('script', get_template_directory_uri() . '/assets/scripts/script.js', false, null);
 
 // ? Montar div de conteúdo
 

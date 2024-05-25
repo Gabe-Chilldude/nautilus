@@ -1,15 +1,77 @@
-@media(max-width: 1024px)  {
+@media(max-width: 1068px)  {
+
+/* 
+    ? parts/navbar
+*/
+
+    div.navbar  {
+        justify-content: space-between;
+    }
+
+    img.logo  {
+        margin-left:70px;
+    }
+
+    ul.menu  {
+        display: none;
+    }
+
+    li.menu_item {
+        margin: 20px 0px;
+    }
+
+    button.hamburger_icon  {
+        display: inline-block;
+        margin-right: 70px;
+    }
+
+/* 
+    ? parts/bannerWithForeground
+*/
+
+    div.cta_and_text  {
+        margin: 0px 0px 0px 300px;
+    }
+
+    img.banner_foreground  {
+        position: absolute;
+        opacity: .5;
+    }
+
 
 }
 
 @media(max-width: 768px)  {
+    div.banner_with_foreground  {
+        justify-content: center;
+    }
+    div.cta_and_text  {
+        margin: 0px;
+    }
+
 
 }
 
-@media(max-width: 425px)  {
-
-}
-
-@media(max-width: 320px)  {
+@media(max-width: 656px)  {
+    img.banner_foreground  {
+        width: 100vw;
+        bottom: 20px;
+    }
+    div.banner_with_foreground  {
+        height: 750px;
+    }
+    div.cta_and_text  {
+        width: 300px;
+    }
+    .banner_title {
+        width:400px;
+        font-size: 40px;
+    }
+    p.banner_text {
+        font-size: 14px;
+    }
+    img.sponsor_img  {
+        height: 20px;
+    }
 
 }
