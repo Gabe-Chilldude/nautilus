@@ -14,5 +14,3 @@ function morphNavbar()  {
         }
     
 }
-
-// TODO tranformar fors em for of's

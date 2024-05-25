@@ -16,8 +16,6 @@ add_action('after_setup_theme', function () {
 
 // ? adicionar estilos ao tema 
 
-add_action('wp_enqueue_style', 'enqueue_multiple_styles', 10, 2);
-
 define('STYLES_PATH', get_template_directory_uri() . '/assets/css');
 
 $stylesheets = [
@@ -36,7 +34,7 @@ function enqueue_multiple_styles(array $sheets, $version = false)  {
     }
 }
 
-do_action('wp_enqueue_style', $stylesheets, '0.1.3');
+enqueue_multiple_styles($stylesheets, false);
 
 wp_enqueue_script('script', get_template_directory_uri() . '/assets/scripts/script.js', false, false);
 
@@ -44,10 +42,13 @@ wp_enqueue_script('script', get_template_directory_uri() . '/assets/scripts/scri
 
 add_action('get_content_cotainer', 'get_content_container', 10, 1 );
 
-function get_content_cotainer($contents)  {
+function get_content_cotainer(array $slugs)  {
     echo '<div class="content">';
 
-    echo $contents;
+    foreach($slugs as $slug)  {
+        get_template_part($slug);
+    }
 
     echo'</div>';
 }
+

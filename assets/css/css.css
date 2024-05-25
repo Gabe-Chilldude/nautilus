@@ -7,14 +7,14 @@
 .text  {
     font-family: "Prompt";
     color: white;
+    margin: 0px;
 }
 
-.body_text {
+.body_text  {
     font-family: "Catamaran";
     font-weight: 300;
+    line-height: 27px;
 }
-
-/* TODO instalar fonte Catamaran */
 
 .sub_title  {
     font-family: "Mukta";
@@ -23,7 +23,7 @@
     font-weight: 400;
 }
 
-.title {
+.title  {
     font-weight: 700;
     line-height: 50px;
 }
@@ -41,6 +41,27 @@
     letter-spacing: .3px;
     transition: all ease-in-out .3s;
     cursor: pointer;
+}
+
+.input  {
+    cursor: text;
+    margin: 0px 10px 0px 0px;
+    background-color: #EF5D5D;
+    height: 36px;
+    width: 270px;
+    text-transform: none;
+    padding: 5px 20px;
+    font-size: 17px;
+
+    word-spacing: normal;
+    letter-spacing: normal;
+} 
+
+.input::placeholder  {
+    font-family: "Catamaran";
+    font-weight: 100;
+    color: white;
+    text-transform: none;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++  
@@ -124,7 +145,6 @@ div.banner_with_foreground  {
 img.banner_foreground  {
     height: 695px;
     margin-left: -100px;
-
 }
 
 div.ctaAndText  {
@@ -190,14 +210,55 @@ img.sponsor_img  {
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-div.footer_form  {
+div.footer_with_form  {
     background-color: #e33f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+}
+
+div.footer_form_container  {
+    display: flex;
+    justify-self: flex-start;
+    flex-direction: column;
+    width: 720px;
+    margin-right: 20px;
+    margin-left: -90px;
+}
+
+.footer_title {
+    line-height: 35px;
 }
 
 button.footer_button  {
     background-color: #2ecc71;
+    height: 41px;
+    margin: 15px -115px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
 }
 
 button.footer_button:hover  {
     background-color: #2fa25f;
+}
+
+.footer_form {
+    display: flex;
+}
+
+.footer_foreground  {
+    margin-top: 130px;
+    height: 500px;
+}
+
+div.credits {
+    height: 55px;
+    background-color: #d13232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

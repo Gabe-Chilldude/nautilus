@@ -2,15 +2,13 @@
 
 get_header();
 
-echo '<div class="content">';
 
-get_template_part('/parts/navbar');
+get_content_cotainer([
+    'parts/navbar',
+    'parts/bannerWithForeground',
+    'parts/footerForm'
+ ]);
 
-get_template_part('parts/bannerWithForeground');
-
-get_template_part('parts/footerForm');
-
-echo '<div style = "background-color:blue;width:98.61vw;height:200vh;margin:0px;padding:0px;"></div>';
 
 echo '</div>';
 
