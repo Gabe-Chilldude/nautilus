@@ -54,7 +54,7 @@
 
 @media(max-width: 656px)  {
     img.banner_foreground  {
-        width: 100vw;
+        /* width: 100vw; */
         bottom: 20px;
     }
     div.banner_with_foreground  {
