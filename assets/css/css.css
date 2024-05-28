@@ -56,7 +56,7 @@ body {
     margin: 0px 10px 0px 0px;
     background-color: #EF5D5D;
     height: 36px;
-    width: 270px;
+    width: 186px;
     text-transform: none;
     padding: 5px 20px;
     font-size: 17px;
@@ -244,13 +244,12 @@ div.footer_with_form  {
     overflow: hidden;
 }
 
-div.footer_form_container  {
+div.form_and_text  {
     display: flex;
     justify-self: flex-start;
     flex-direction: column;
     width: 720px;
-    margin-right: 20px;
-    margin-left: -90px;
+    margin: 0px 20px 0px -90px;
 }
 
 .footer_title {
@@ -260,11 +259,10 @@ div.footer_form_container  {
 button.footer_button  {
     background-color: #2ecc71;
     height: 41px;
-    margin: 15px -115px 0px 0px;
+    margin: 15px 0px 0px 550px;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: flex-end;
 }
 
 button.footer_button:hover  {
@@ -273,11 +271,19 @@ button.footer_button:hover  {
 
 .footer_form {
     display: flex;
+    flex-wrap: wrap;
+    width: inherit;
 }
 
 .footer_foreground  {
     margin-top: 130px;
     height: 500px;
+}
+
+div.footer_form_container {
+    flex-wrap: wrap;
+    width: 800px;
+    display: flex;
 }
 
 div.credits {

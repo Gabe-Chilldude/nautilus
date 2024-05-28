@@ -11,6 +11,4 @@ get_content_cotainer([
  ]);
 
 
-echo '</div>';
-
 get_footer();
