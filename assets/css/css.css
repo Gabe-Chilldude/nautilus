@@ -288,8 +288,13 @@ div.footer_form_container {
 
 div.credits {
     height: 55px;
+    width: 100vw;
     background-color: #d13232;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div.credits>.sub_title  {
+    text-align: center;
 }

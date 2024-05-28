@@ -73,20 +73,36 @@
     }
     div.form_and_text  {
         width: 300px;
+        z-index: 1;
+    }
+    img.footer_foreground  {
+        margin: 0px;
+        height: 700px;
+        position: absolute;
+        transform: scaleX(-1);
+        left: 20vw;
+        opacity: .5;
     }
     div.footer_form_container  {
-        flex-direction: column;
+        width: 500px;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+    }
+    .footer_form  {
         width: 300px;
     }
     button.footer_button  {
         margin-left: 0px;
         width: 290px;
-        height: 56px;
+        height: 46px;
     }
     .input  {
         width: inherit;
         margin-top: 10px;
-        height: 56px;
+        height: 36px;
+    }
+    .credits  {
+        position: absolute;
     }
 
 
@@ -114,6 +130,21 @@
     }
     img.sponsor_img  {
         height: 20px;
+    }
+
+
+    div.footer_form_container  {
+        flex-wrap: wrap;
+    }
+    img.footer_foreground  {
+        left: 0px;
+        margin-top: 15px;
+    }
+    div.form_and_text  {
+        margin-left: 60px;
+    }
+    div.credits>.sub_title  {
+        font-size: 10px;
     }
 
 }
