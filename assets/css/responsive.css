@@ -97,7 +97,7 @@
     ? parts/bannerWithForeground
 */
     img.banner_foreground  {
-        bottom: 70px;
+        height: 800px;
     }
     div.banner_with_foreground  {
         height: 750px;

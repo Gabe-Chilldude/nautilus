@@ -1,4 +1,4 @@
-<div class="footer_with_form">
+<div id="contato" class="footer_with_form">
 
     <img src="<?= get_template_directory_uri();?>/assets/images/form_foreground.png" alt="" class="footer_foreground">
 

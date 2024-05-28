@@ -7,22 +7,24 @@ window.onscroll = function() {morphNavbar()};
 function morphNavbar()  {
         if (document.documentElement.scrollTop > 50)  {
             for(i=0;i<navbar.length;i++)  {
-                navbar[i].className = "navbar_container navbar_red"
+                navbar[i].classList.add('navbar_red')
             }
         } else  {
             for(i=0;i<navbar.length;i++)  {
-                navbar[i].className = "navbar_container"
+                if(dropdown[i].className == 'menu_dropdown hidden')  {
+                    navbar[i].classList.remove('navbar_red')
+                }
             }
         }
-    
 }
 
-document.getElementById('hamburger').onclick = function() {
-	for(i=0;i<a.length;i++)  {
-		toggleMenu(dropdown[i])
-	}
-}
-
-function toggleMenu(p)  {
-	p.classList.toggle('hidden')
+function toggleMenu()  {
+    for(i=0;i<dropdown.length;i++)  {
+        dropdown[i].classList.toggle('hidden')
+    }
+    if(document.documentElement.scrollTop < 50)  {
+        for(i=0;i<navbar.length;i++)  {
+            navbar[i].classList.toggle('navbar_red')
+        }
+    }
 }
