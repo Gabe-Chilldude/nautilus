@@ -68,8 +68,8 @@
     ? parts/footerForm
 */
 
-    div.footer_with_form  {
-        height: 650px;
+    section.footer_with_form  {
+        height: 700px;
     }
     div.form_and_text  {
         width: 300px;
@@ -105,6 +105,20 @@
         position: absolute;
     }
 
+    section.image_and_text  {
+        flex-direction: column;
+    }
+    .icon_card  {
+        width: 30vw;
+    }
+    .cards_container {
+        width: 70vw;
+        align-self: center;
+    }
+    .body_image  {
+        width: 70vw;
+    }  
+
 
 }
 
@@ -132,6 +146,9 @@
         height: 20px;
     }
 
+/* 
+    ? parts/footerForm
+*/
 
     div.footer_form_container  {
         flex-wrap: wrap;

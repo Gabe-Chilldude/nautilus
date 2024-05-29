@@ -310,10 +310,23 @@ div.credits>.sub_title  {
 
 section.image_and_text  {
     display: flex;
-    padding: 60px 0px;
+    margin: 30px 0px;
     justify-content: space-evenly;
+    align-items: center;
+}
+.body_image  {
+    width: 35vw;
+    height: auto;
 }
 .body_text  {
+    font-weight: 300;
+    line-height: 27px;
+}
+.body_title  {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.body_color  {
     color: #494949;
 }
 .red_text  {
@@ -321,12 +334,18 @@ section.image_and_text  {
     font-weight: 400;
 }
 .section_text  {
-    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 80vh;
+    width: 640px;
 }
 .cards_container  {
+    margin-top: 25px;
+    width: 50vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
 }
 .icon_card  {
@@ -334,10 +353,10 @@ section.image_and_text  {
     align-items: center;
     justify-content: space-between;
     margin: 10px;
-    width:260px;
+    width:21vw;
     height: 70px;
     border-radius: 7px;
-    box-shadow: -20px 10px 104px -11px rgba(0, 0, 0, 0.301);
+    box-shadow: -20px 10px 104px -11px rgba(0, 0, 0, 0.164);
 }
 .card_icon  {
     width: 20px;

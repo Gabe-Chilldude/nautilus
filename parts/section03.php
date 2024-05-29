@@ -5,10 +5,10 @@
     <div class="section_text">
         <p class="red_text text sub_title">como posso te ajudar?
         </p>
-        <h1 class="body_text text title">Oi, eu sou a Bê,
+        <h1 class="body_color body_title text title">Oi, eu sou a Bê,
         do Brand Persona!
         </h1>
-        <p class="body_text text">O combo Brand Persona PYXYS + Ilustraria 3D vai muito além de desenhar um avatar 3D: é o primeiro do Brasil a combinar a criação da persona virtual com um plano de performance, voltado para resultados do negócio. “Vem comigo que sua marca vai aprender a escutar e conversar com seu cliente, construindo uma comunidade no universo digital”, convida Bê, a avatar do Brand Persona.</p>
+        <p class="body_text  body_color text">O combo Brand Persona PYXYS + Ilustraria 3D vai muito além de desenhar um avatar 3D: é o primeiro do Brasil a combinar a criação da persona virtual com um plano de performance, voltado para resultados do negócio. “Vem comigo que sua marca vai aprender a escutar e conversar com seu cliente, construindo uma comunidade no universo digital”, convida Bê, a avatar do Brand Persona.</p>
 
 
         <div class="cards_container">
