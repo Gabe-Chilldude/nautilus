@@ -1,4 +1,4 @@
-<div style="background-image: url(<?=get_template_directory_uri();?>/assets/images/banner_background.jpg);" class="banner_with_foreground">
+<section style="background-image: url(<?=get_template_directory_uri();?>/assets/images/banner_background.jpg);" class="banner_with_foreground">
 
    <img src="<?=get_template_directory_uri()?>/assets/images/banner_foreground.png" alt="" class="banner_foreground"> 
 
@@ -30,4 +30,4 @@
 
    </div>
 
-</div>
+</section>

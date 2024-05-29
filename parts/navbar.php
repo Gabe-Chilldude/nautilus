@@ -1,4 +1,4 @@
-<div class="navbar_container">
+<section class="navbar_container">
 
 
 	<div class="navbar">
@@ -42,4 +42,4 @@
 
     </div>
 
-</div>
+</section>

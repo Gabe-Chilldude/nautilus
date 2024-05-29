@@ -57,7 +57,7 @@
 /* 
     ? parts/bannerWithForeground
 */
-    div.banner_with_foreground  {
+    section.banner_with_foreground  {
         justify-content: center;
     }
     div.cta_and_text  {
@@ -115,7 +115,7 @@
     img.banner_foreground  {
         height: 800px;
     }
-    div.banner_with_foreground  {
+    section.banner_with_foreground  {
         height: 750px;
     }
     div.cta_and_text  {

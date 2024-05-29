@@ -18,7 +18,7 @@ body {
     margin: 0px;
 }
 
-.body_text  {
+.catamaran_text  {
     font-family: "Catamaran";
     font-weight: 300;
     line-height: 27px;
@@ -35,7 +35,10 @@ body {
     font-weight: 700;
     line-height: 50px;
 }
-
+.accent_text  {
+    font-weight: 600;
+    color: #494949;
+}
 .button  {
     font-family: "Prompt";
     border-radius: 10px;
@@ -79,7 +82,7 @@ body {
  ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
-div.navbar_container  {
+section.navbar_container  {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -105,14 +108,14 @@ div.navbar>* {
     transition: all ease-in-out .3s;
 }
 
-div.navbar_red  {
+.navbar_red  {
     background-color: #e33f3f;
     -webkit-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
     -moz-box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
     box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.39);
 }
 
-div.navbar_red>div.navbar>img.logo  {
+.navbar_red>div.navbar>img.logo  {
     height: 45px;
 }
 
@@ -154,7 +157,7 @@ svg.hamburger_icon  {
 
 
 
-div.banner_with_foreground  {
+section.banner_with_foreground  {
     height: 695px;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -235,7 +238,7 @@ img.sponsor_img  {
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-div.footer_with_form  {
+section.footer_with_form  {
     background-color: #e33f3f;
     display: flex;
     justify-content: center;
@@ -297,4 +300,49 @@ div.credits {
 
 div.credits>.sub_title  {
     text-align: center;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++
+
+    ? código da parte parts/section03
+
++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+section.image_and_text  {
+    display: flex;
+    padding: 60px 0px;
+    justify-content: space-evenly;
+}
+.body_text  {
+    color: #494949;
+}
+.red_text  {
+    color: #e33f3f;
+    font-weight: 400;
+}
+.section_text  {
+    width: 600px;
+}
+.cards_container  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.icon_card  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width:260px;
+    height: 70px;
+    border-radius: 7px;
+    box-shadow: -20px 10px 104px -11px rgba(0, 0, 0, 0.301);
+}
+.card_icon  {
+    width: 20px;
+    height: 20px;
+    background-color: #dcf2ed;
+    border-radius: 30px;
+    padding: 15px;
 }
