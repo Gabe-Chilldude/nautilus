@@ -14,7 +14,7 @@ add_action('after_setup_theme', function () {
     ));
 });
 
-// ? adicionar estilos ao tema 
+// ? Adicionar estilos ao tema 
 
 define('STYLES_PATH', get_template_directory_uri() . '/assets/css');
 
@@ -38,7 +38,7 @@ enqueue_multiple_styles($stylesheets, '0.1.592');
 
 wp_enqueue_script('script', get_template_directory_uri() . '/assets/scripts/script.js', false, '0.1.66');
 
-// ? Montar div de conteúdo
+// ? Montar div de conteúdo e incluir partes
 
 add_action('get_content_cotainer', 'get_content_container', 10, 1 );
 
