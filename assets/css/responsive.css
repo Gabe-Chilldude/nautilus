@@ -105,6 +105,10 @@
         position: absolute;
     }
 
+/* 
+    ? parts/section03
+*/
+
     section.image_and_text  {
         flex-direction: column;
     }
@@ -162,6 +166,26 @@
     }
     div.credits>.sub_title  {
         font-size: 10px;
+    }
+/* 
+    ? parts/section03
+*/
+
+    .image_and_text  {
+        height: 1400px;
+    }
+    .section_text  {
+        width: 300px;
+    }
+    .cards_container  {
+        flex-direction: column;
+    }
+    .icon_card  {
+        width: inherit;
+        justify-content: flex-start;
+    }
+    .card_icon  {
+        margin: 0px 40px;
     }
 
 }
